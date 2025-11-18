@@ -12,7 +12,6 @@ public class BatalhaService {
 
     public String iniciarBatalha(String nome1, String nome2, String arma1, String arma2, boolean armadura1, boolean armadura2) {
         batalhaAtiva = true;
-        // >>> CÓDIGO PRINCIPAL, SE TUDO DER ERRADO, VOLTA PRA ELE <<<
         Gladiador gladiador1 = new Gladiador(nome1, armadura1);
         Gladiador gladiador2 = new Gladiador(nome2, armadura2);
 
@@ -94,84 +93,5 @@ public class BatalhaService {
             return gladiador1.getNomeGladiador();
         else
             return gladiador2.getNomeGladiador();
-
-        // >>> CÓDIGO PARA SER UTILIZADO EM SEGUNDO PLANO <<<
-
-        // while (gladiador1.possuiVidas() && gladiador2.possuiVidas()) {
-        // if (turnoGladiador1) {
-        // gladiador2.receberGolpe(armaDoGladiador1);
-        // if (gladiador2.possuiVidas()) {
-        // gladiador1.receberGolpe(armaDoGladiador2);
-        // }
-        // } else {
-        // gladiador1.receberGolpe(armaDoGladiador2);
-        // if (gladiador1.possuiVidas()) {
-        // gladiador2.receberGolpe(armaDoGladiador1);
-        // }
-        // }
-        // turnoGladiador1 = !turnoGladiador1;
-        // arena.atualizarHumorETorcida(gladiador1, gladiador2);
-        // }
-
-        // System.out.println("=== FIM DO COMBATE ===");
-
-        // if (!gladiador1.possuiVidas() && !gladiador2.possuiVidas()) {
-        // return "Empate";
-        // } else if (gladiador1.possuiVidas()) {
-        // return gladiador1.getNomeGladiador();
-        // } else {
-        // return gladiador2.getNomeGladiador();
-        // }
     }
-
-    // public Map<String, Object> executarRodada() {
-    // if (!batalhaAtiva) {
-    // return Map.of("erro", "Nenhuma batalha em andamento.");
-    // }
-
-    // rodada++;
-    // System.out.println(">>> RODADA " + rodada + " <<<");
-
-    // if (turnoGladiador1) {
-    // gladiador2.receberGolpe(arma1);
-    // if (gladiador2.possuiVidas()) {
-    // gladiador1.receberGolpe(arma2);
-    // }
-    // } else {
-    // gladiador1.receberGolpe(arma2);
-    // if (gladiador1.possuiVidas()) {
-    // gladiador2.receberGolpe(arma1);
-    // }
-    // }
-
-    // turnoGladiador1 = !turnoGladiador1;
-    // arena.atualizarHumorETorcida(gladiador1, gladiador2);
-
-    // boolean g1Vivo = gladiador1.possuiVidas();
-    // boolean g2Vivo = gladiador2.possuiVidas();
-    // String vencedor = null;
-
-    // if (!g1Vivo && !g2Vivo) {
-    // vencedor = "Empate - ambos morreram";
-    // batalhaAtiva = false;
-    // } else if (!g1Vivo) {
-    // vencedor = gladiador2.getNomeGladiador();
-    // batalhaAtiva = false;
-    // } else if (!g2Vivo) {
-    // vencedor = gladiador1.getNomeGladiador();
-    // batalhaAtiva = false;
-    // }
-
-    // Map<String, Object> resposta = new HashMap<>();
-    // resposta.put("rodada", rodada);
-    // resposta.put("gladiador1Vidas", gladiador1.possuiVidas());
-    // resposta.put("gladiador2Vidas", gladiador2.possuiVidas());
-    // resposta.put("vencedor", vencedor);
-
-    // return resposta;
-    // }
-
-    // public boolean batalhaEstaAtiva() {
-    // return batalhaAtiva;
-    // }
 }
