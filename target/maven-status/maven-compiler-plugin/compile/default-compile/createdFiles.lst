@@ -1,4 +1,5 @@
 com\projetoa3\projetoa3java\classes\Arma.class
+com\projetoa3\projetoa3java\services\BatalhaService.class
 com\projetoa3\projetoa3java\Batalha.class
 com\projetoa3\projetoa3java\controllers\BatalhaController.class
 com\projetoa3\projetoa3java\classes\Arena.class

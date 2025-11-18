@@ -15,9 +15,9 @@ public class Gladiador {
         int dano = arma.getForcaDestrutiva();
 
         if (possuiArmadura) {
-            dano = (int)(dano * 0.7); // Reduz o dano em 30% quando tem armadura
+            dano = (int)(dano * 0.7);
         } else {
-            dano = (int)(dano * 1.3); // Aumenta o dano em 30% quando não tem armadura
+            dano = (int)(dano * 1.3);
         }
 
         if (dano < 0) {
@@ -48,7 +48,7 @@ public class Gladiador {
         return nomeGladiador;
     }
 
-    // Retorna a quantidade atual de vidas do gladiador (usado pela Arena)
+    // Usado na classe Arena
     public int getQuantidadeVidas() {
         return quantidadeVidas;
     }

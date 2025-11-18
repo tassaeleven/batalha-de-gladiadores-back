@@ -72,7 +72,7 @@ public class Arena {
         System.out.println("--- Torcida do " + n1 + " ---");
         System.out.println("Torcedores: " + torcedoresGladiador1);
         System.out.println("Humor: " + (humorTorcidaGladiador1 ? "Bem humorados" : "Mal humorados"));
-        System.out.println("\n--- Torcida de " + n2 + " ---");
+        System.out.println("\n--- Torcida do " + n2 + " ---");
         System.out.println("Torcedores: " + torcedoresGladiador2);
         System.out.println("Humor: " + (humorTorcidaGladiador2 ? "Bem humorados" : "Mal humorados"));
         System.out.println("Total de torcedores: " + (torcedoresGladiador1 + torcedoresGladiador2));
