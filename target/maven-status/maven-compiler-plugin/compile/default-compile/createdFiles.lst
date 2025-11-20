@@ -1,6 +1,12 @@
-com\projetoa3\projetoa3java\classes\Arma.class
+com\projetoa3\projetoa3java\dto\ResultadoBatalhaResponse.class
 com\projetoa3\projetoa3java\services\BatalhaService.class
 com\projetoa3\projetoa3java\Batalha.class
-com\projetoa3\projetoa3java\controllers\BatalhaController.class
+com\projetoa3\projetoa3java\dto\ResultadoBatalhaResponse$GladiadorDTO.class
+com\projetoa3\projetoa3java\dto\ResultadoBatalhaResponse$RodadaDTO.class
 com\projetoa3\projetoa3java\classes\Arena.class
+com\projetoa3\projetoa3java\dto\IniciarBatalhaRequest.class
+com\projetoa3\projetoa3java\classes\Arma.class
+com\projetoa3\projetoa3java\dto\ResultadoBatalhaResponse$ArenaDTO.class
+com\projetoa3\projetoa3java\controllers\BatalhaController.class
+com\projetoa3\projetoa3java\dto\IniciarBatalhaRequest$GladiadorInit.class
 com\projetoa3\projetoa3java\classes\Gladiador.class

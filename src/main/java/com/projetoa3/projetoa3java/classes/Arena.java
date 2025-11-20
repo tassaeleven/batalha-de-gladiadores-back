@@ -64,6 +64,30 @@ public class Arena {
         }
     }
 
+    public int getTorcedoresGladiador1() {
+        return torcedoresGladiador1;
+    }
+
+    public int getTorcedoresGladiador2() {
+        return torcedoresGladiador2;
+    }
+
+    public boolean isHumorTorcidaGladiador1() {
+        return humorTorcidaGladiador1;
+    }
+
+    public boolean isHumorTorcidaGladiador2() {
+        return humorTorcidaGladiador2;
+    }
+
+    public String getNomeGladiador1() {
+        return nomeGladiador1;
+    }
+
+    public String getNomeGladiador2() {
+        return nomeGladiador2;
+    }
+
     public void exibirStatusArena() {
         String n1 = (nomeGladiador1 == null) ? "Gladiador 1" : nomeGladiador1;
         String n2 = (nomeGladiador2 == null) ? "Gladiador 2" : nomeGladiador2;
